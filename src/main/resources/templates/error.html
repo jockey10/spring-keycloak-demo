@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="ut8">
+    <title>SpringKeycloakDemo</title>
+    <link type="text/css" href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/webjars/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">SpringBoot Demo</a>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/secure">Secure</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="logout">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <div class="container">
+        <div class="md-col-12">
+            <pre><h3>An error was encountered accessing the resource</h3>
+            <table class="table">
+                <tr>
+                    <td><strong>Date</strong></td>
+                    <td th:text="${timestamp}"/>
+                </tr>
+                <tr>
+                    <td><Strong>Path</Strong></td>
+                    <td th:text="${path}"/>
+                </tr>
+                <tr>
+                    <td><Strong>Error</Strong></td>
+                    <td th:text="${error}"/>
+                </tr>
+                <tr>
+                    <td><Strong>Status</Strong></td>
+                    <td th:text="${status}"/>
+                </tr>
+                <tr>
+                    <td><Strong>Message</Strong></td>
+                    <td th:text="${message}"/>
+                </tr>
+            </table></pre>
+        </div>
+    </div>
+</div>
+</body>
+</html>
